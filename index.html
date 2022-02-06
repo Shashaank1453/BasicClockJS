@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#27c4b6;
+}
+h1{
+    position:absolute;
+    top: 42vh; left: 25vw;
+}
+#colors{
+    height: 200px;
+    width: 200px;
+    border-radius:100px;
+    background-color: beige;
+    position:absolute;
+    top: 50px;
+    left:50px;
+}
+    </style>
+    <script>
+        const update=()=>{
+    let date = new Date();
+    document.getElementById("Date&Time").innerHTML=date;
+}
+setInterval(update,1000);
+    </script>
+</head>
+<body>
+    <h1 id="Date&Time"></h1>
+</body>
+</html>
